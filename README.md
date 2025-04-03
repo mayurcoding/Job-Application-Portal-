@@ -71,7 +71,9 @@
 🚀 The application will run at **`http://localhost:3000`**.
 
 ## 🎨 Screenshots (Optional)
-Include some screenshots of the UI for better clarity.
+![Uploading jobapp.png…]()
+
+![Uploading job2.png…]()
 
 ## 🤝 Contributing
 1. Fork the repository.

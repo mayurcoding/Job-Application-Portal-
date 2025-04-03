@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 📝 Job Application Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 A fully interactive **Job Application Portal** built with **React, Redux, and Context API**, featuring a multi-step job application process with validation, state management, and responsive design.
 
-## Available Scripts
+## 📌 Features
 
-In the project directory, you can run:
+### ✅ **Home Page** (`/`)
+- Displays a list of available job positions.
+- Each job has a "View Details" button that navigates to the job detail page.
 
-### `npm start`
+### ✅ **Job Details Page** (`/job/:id`)
+- Shows detailed information about a job (title, company, description, requirements, salary, etc.).
+- Includes an "Apply Now" button to start the application process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✅ **Multi-Step Application Form** (`/apply/:id`)
+- **Step 1:** Personal Information – Name, email, phone number.
+- **Step 2:** Experience – Years of experience, dynamically add skills.
+- **Step 3:** Additional Information – Cover letter, preferred start date.
+- Form validation for required fields and correct formats.
+- Stores submitted applications in Redux.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✅ **Application Summary Page** (`/applications/:id`)
+- Displays the submitted application details.
+- Includes an "Edit Application" button to update any step of the form.
 
-### `npm test`
+### ✅ **Application List Page** (`/applications`)
+- Lists all submitted applications with job title, applicant name, and a short summary.
+- Each application has a "View Details" button to see full information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ **User Profile Page** (`/profile`)
+- Uses **Context API** to manage user details (name, email).
+- Allows users to update and save their profile information.
 
-### `npm run build`
+### ✅ **State Management**
+- **Redux** is used to handle job applications globally.
+- **Context API** is used to manage user profile data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✅ **Custom Hooks**
+- `useForm` hook for handling form inputs, validation, and submission efficiently.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ✅ **Responsive UI**
+- **Modern UI Design** with CSS for better user experience.
+- Fully optimized for **desktop and mobile screens**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tech Stack
 
-### `npm run eject`
+- **Frontend:** React, Redux, React Router, Context API
+- **State Management:** Redux, Context API
+- **Styling:** CSS (No Tailwind or Bootstrap used)
+- **Routing:** React Router
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📥 **Installation**
+1️⃣ **Clone the repository**:
+   ```sh
+   git clone https://github.com/yourusername/job-application-portal.git
+   cd job-application-portal
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2️⃣ **Install dependencies**:
+   ```sh
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3️⃣ **Start the development server**:
+   ```sh
+   npm start
+   ```
 
-## Learn More
+🚀 The application will run at **`http://localhost:3000`**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Screenshots (Optional)
+Include some screenshots of the UI for better clarity.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📜 License
+This project is **open-source** and free to use under the [MIT License](LICENSE).
